@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "KiandaBot"
+version = "1.0.0"
+id = "artifacts/kiandabot"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25004
+
+[services.development]
+run = "pnpm --filter @workspace/kiandabot run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kiandabot", "run", "build" ]
+publicDir = "artifacts/kiandabot/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25004"
+BASE_PATH = "/"
