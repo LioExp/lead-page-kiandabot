@@ -1,0 +1,54 @@
+Skip to content
+
+Library
+Apps
+KiandaBot
+KiandaBotWebsite
+Images
+Angolan abstract network art
+Angolan abstract network artImage
+Abstract data dashboard visualization
+Abstract data dashboard visualizationImage
+Network affiliate marketing node
+Network affiliate marketing nodeImage
+Update image for the KiandaBot landing page
+10:29 pm, Apr 07, 2026
+
+I can see you've attached the PRD for KiandaBot — a WhatsApp sales automation platform built for the Angolan market. Based on what I'm reading, you'd like to build a web app for this project.
+
+Let me understand what you'd like to create. The PRD covers a full bot system, a web dashboard, and the Unitel Go Challenge pitch materials.
+
+What would you like me to build for KiandaBot?
+A landing page / pitch site for the Unitel Go Challenge (showcases the product, features, and pitch)
+10:30 pm, Apr 07, 2026
+KiandaBotWebsite
+
+The KiandaBot landing page is live and ready to preview. Here's what was built:
+
+Hero section — Bold headline "Transforme WhatsApp em uma máquina de vendas." with an amber/gold + midnight green palette, a WhatsApp phone mockup showing a real bot interaction, and floating animated stat cards.
+
+Full single-page pitch site with 8 sections:
+
+    Sticky navigation with smooth scroll anchors
+    Core message section — the key pitch quote
+    Target users grid — Vendedores, Donos de Grupos, Afiliados, Lojas
+    Features section — all 7 differentials with the commission breakdown
+    Unitel data dashboard section — positioned specifically for the Unitel pitch
+    Traction stats banner — 40+ interested, 28 responses, Beta live
+    Pricing cards — Básico (3.000 Kz), Premium (5.000 Kz), Lojas (10.000 Kz)
+    Final CTA — "Quero entrar na beta" pointing to gochallenge@unitel.co.ao
+
+All text is in Portuguese, animations use Framer Motion, and the design uses Plus Jakarta Sans + Syne typography with a bold Midnight Green / Amber Gold palette that stands out from generic WhatsApp green. Good luck with the Unitel Go Challenge!
+Ready to share? Publish this App in a few clicks.
+Publish to domain
+Available
+.replit.app
+Who can access your app
+
+as cores do kiandabot são, roxo e o laranja e menos usada prq é mais pra dar um contraste..... prq veja, na logo do kiandabot tudo é roxo.
+
+e tire a unitel challenge disso, o produto e o kiandabot e não a unitel.
+
+essa é a logo do kianda bot e provavelmente a apela que queria dizer esta lá.
+
+quero que a paleta seja : branco + oque esta na logo.....

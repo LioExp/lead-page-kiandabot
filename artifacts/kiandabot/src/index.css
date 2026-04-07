@@ -79,38 +79,39 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  /* Midnight Green / Amber Palette */
-  --background: 186 20% 98%;
-  --foreground: 186 100% 9%;
+  /* KiandaBot: White + Purple + Orange accent */
+  --background: 0 0% 100%;
+  --foreground: 245 60% 12%;
   
   --card: 0 0% 100%;
-  --card-foreground: 186 100% 9%;
-  --card-border: 186 15% 90%;
+  --card-foreground: 245 60% 12%;
+  --card-border: 262 20% 90%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 186 100% 9%;
-  --popover-border: 186 15% 90%;
+  --popover-foreground: 245 60% 12%;
+  --popover-border: 262 20% 90%;
   
-  /* Amber / Gold */
-  --primary: 42 100% 50%;
-  --primary-foreground: 186 100% 9%;
+  /* Vivid Purple (from logo) */
+  --primary: 262 90% 55%;
+  --primary-foreground: 0 0% 100%;
   
-  /* Midnight Green */
-  --secondary: 186 100% 9%;
-  --secondary-foreground: 42 100% 50%;
+  /* Dark Navy (logo background) */
+  --secondary: 245 60% 12%;
+  --secondary-foreground: 0 0% 100%;
   
-  --muted: 186 15% 90%;
-  --muted-foreground: 186 20% 40%;
+  --muted: 262 15% 95%;
+  --muted-foreground: 245 30% 45%;
   
-  --accent: 42 100% 90%;
-  --accent-foreground: 42 100% 30%;
+  /* Orange — accent only, used sparingly */
+  --accent: 25 100% 90%;
+  --accent-foreground: 25 100% 35%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 186 15% 90%;
-  --input: 186 15% 90%;
-  --ring: 42 100% 50%;
+  --border: 262 20% 90%;
+  --input: 262 20% 90%;
+  --ring: 262 90% 55%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-display: 'Syne', sans-serif;
@@ -118,29 +119,29 @@
   --app-font-mono: Menlo, monospace;
   --radius: 0.75rem;
 
-  --chart-1: 42 100% 50%;
-  --chart-2: 186 100% 9%;
-  --chart-3: 186 40% 40%;
-  --chart-4: 42 60% 60%;
+  --chart-1: 262 90% 55%;
+  --chart-2: 245 60% 12%;
+  --chart-3: 262 50% 70%;
+  --chart-4: 25 100% 55%;
   --chart-5: 0 84% 60%;
 
-  --sidebar: 186 20% 98%;
-  --sidebar-foreground: 186 100% 9%;
-  --sidebar-border: 186 15% 90%;
-  --sidebar-primary: 42 100% 50%;
-  --sidebar-primary-foreground: 186 100% 9%;
-  --sidebar-accent: 186 15% 90%;
-  --sidebar-accent-foreground: 186 100% 9%;
-  --sidebar-ring: 42 100% 50%;
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 245 60% 12%;
+  --sidebar-border: 262 20% 90%;
+  --sidebar-primary: 262 90% 55%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 262 15% 95%;
+  --sidebar-accent-foreground: 245 60% 12%;
+  --sidebar-ring: 262 90% 55%;
 
-  --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.02);
-  --shadow-xs: 0px 2px 0px 0px rgba(0,0,0,0.04);
-  --shadow-sm: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 1px 2px -1px rgba(0,0,0,0.04);
-  --shadow: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 1px 2px -1px rgba(0,0,0,0.04);
-  --shadow-md: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 2px 4px -1px rgba(0,0,0,0.04);
-  --shadow-lg: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 4px 6px -1px rgba(0,0,0,0.04);
-  --shadow-xl: 0px 2px 0px 0px rgba(0,0,0,0.02), 0px 8px 10px -1px rgba(0,0,0,0.04);
-  --shadow-2xl: 0px 2px 0px 0px rgba(0,0,0,0.02);
+  --shadow-2xs: 0px 2px 0px 0px rgba(80,40,160,0.04);
+  --shadow-xs: 0px 2px 0px 0px rgba(80,40,160,0.06);
+  --shadow-sm: 0px 2px 0px 0px rgba(80,40,160,0.04), 0px 1px 2px -1px rgba(80,40,160,0.06);
+  --shadow: 0px 2px 0px 0px rgba(80,40,160,0.04), 0px 1px 2px -1px rgba(80,40,160,0.06);
+  --shadow-md: 0px 2px 0px 0px rgba(80,40,160,0.04), 0px 2px 4px -1px rgba(80,40,160,0.08);
+  --shadow-lg: 0px 2px 0px 0px rgba(80,40,160,0.04), 0px 4px 6px -1px rgba(80,40,160,0.10);
+  --shadow-xl: 0px 2px 0px 0px rgba(80,40,160,0.04), 0px 8px 10px -1px rgba(80,40,160,0.12);
+  --shadow-2xl: 0px 2px 0px 0px rgba(80,40,160,0.04);
   
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -163,53 +164,51 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  /* Midnight Green / Amber Palette (Dark Mode) */
-  --background: 186 100% 5%;
-  --foreground: 186 20% 98%;
+  /* KiandaBot Dark Mode */
+  --background: 245 60% 8%;
+  --foreground: 0 0% 96%;
   
-  --card: 186 100% 7%;
-  --card-foreground: 186 20% 98%;
-  --card-border: 186 80% 12%;
+  --card: 245 50% 11%;
+  --card-foreground: 0 0% 96%;
+  --card-border: 262 30% 20%;
   
-  --popover: 186 100% 7%;
-  --popover-foreground: 186 20% 98%;
-  --popover-border: 186 80% 12%;
+  --popover: 245 50% 11%;
+  --popover-foreground: 0 0% 96%;
+  --popover-border: 262 30% 20%;
   
-  /* Amber / Gold */
-  --primary: 42 100% 50%;
-  --primary-foreground: 186 100% 9%;
+  --primary: 262 90% 65%;
+  --primary-foreground: 0 0% 100%;
   
-  /* Midnight Green Lightened */
-  --secondary: 186 40% 15%;
-  --secondary-foreground: 42 100% 50%;
+  --secondary: 245 50% 18%;
+  --secondary-foreground: 0 0% 96%;
   
-  --muted: 186 80% 12%;
-  --muted-foreground: 186 20% 60%;
+  --muted: 262 30% 18%;
+  --muted-foreground: 262 20% 65%;
   
-  --accent: 42 100% 20%;
-  --accent-foreground: 42 100% 70%;
+  --accent: 25 100% 30%;
+  --accent-foreground: 25 100% 80%;
   
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 186 80% 12%;
-  --input: 186 80% 12%;
-  --ring: 42 100% 50%;
+  --border: 262 30% 20%;
+  --input: 262 30% 20%;
+  --ring: 262 90% 65%;
 
-  --chart-1: 42 100% 50%;
-  --chart-2: 186 80% 60%;
-  --chart-3: 186 40% 40%;
-  --chart-4: 42 60% 60%;
+  --chart-1: 262 90% 65%;
+  --chart-2: 262 50% 80%;
+  --chart-3: 262 30% 50%;
+  --chart-4: 25 100% 60%;
   --chart-5: 0 84% 60%;
 
-  --sidebar: 186 100% 5%;
-  --sidebar-foreground: 186 20% 98%;
-  --sidebar-border: 186 80% 12%;
-  --sidebar-primary: 42 100% 50%;
-  --sidebar-primary-foreground: 186 100% 9%;
-  --sidebar-accent: 186 80% 12%;
-  --sidebar-accent-foreground: 186 20% 98%;
-  --sidebar-ring: 42 100% 50%;
+  --sidebar: 245 60% 8%;
+  --sidebar-foreground: 0 0% 96%;
+  --sidebar-border: 262 30% 20%;
+  --sidebar-primary: 262 90% 65%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 262 30% 18%;
+  --sidebar-accent-foreground: 0 0% 96%;
+  --sidebar-ring: 262 90% 65%;
 
   --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.5);
   --shadow-xs: 0px 2px 0px 0px rgba(0,0,0,0.5);
