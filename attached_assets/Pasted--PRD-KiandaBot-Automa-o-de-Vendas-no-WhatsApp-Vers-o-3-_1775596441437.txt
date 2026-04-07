@@ -1,0 +1,246 @@
+# 📄 PRD – KiandaBot (Automação de Vendas no WhatsApp)
+
+**Versão:** 3.0 (Final – para arquivo no Obsidian)  
+**Autor:** Lio (LioExp)  
+**Data:** 7 de Abril de 2026  
+**Propósito:** Documento mestre do projeto KiandaBot, abrangendo conceito, público‑alvo expandido, estado técnico, modelo de negócio, diferenciais, roadmap, estratégia para o Unitel Go Challenge e anexos práticos (pitch, formulário, slide).
+
+---
+
+## 1. Visão Geral
+
+### 1.1 O que é o KiandaBot
+O KiandaBot é um assistente automático para WhatsApp que ajuda **vendedores, donos de grupos e afiliados** a divulgar produtos, automatizar postagens, gerar links rastreados e calcular comissões de forma justa. É uma plataforma B2B/B2C que transforma grupos de WhatsApp em canais de venda organizados e rentáveis.
+
+### 1.2 Porquê este projeto
+- **Problema real:** Milhares de angolanos usam WhatsApp para vender, mas perdem horas a postar manualmente; anúncios se perdem; comissões não são rastreadas; donos de grupos não monetizam.
+- **Oportunidade de mercado:** O WhatsApp é a principal ferramenta de vendas em Angola, mas não existem ferramentas de automação acessíveis que integrem vendedores, afiliados e donos de grupos.
+- **Alinhamento com o Unitel Go Challenge:** Startup digital com modelo de negócio claro, escalável, impacto social e potencial de parceria com a Unitel.
+
+### 1.3 Público‑alvo (Expandido)
+| Segmento | Exemplo | Benefício para o utilizador |
+|----------|---------|----------------------------|
+| **Vendedores individuais** | Quem vende roupas, eletrónica, alimentos | Automatiza postagens, rastreia vendas, ganha tempo. |
+| **Donos de grupos de vendas** | Administradores de grupos com centenas de membros | Ganham comissão por cada venda originada no grupo. |
+| **Afiliados / divulgadores** | Pessoas que partilham produtos em vários grupos | Recebem comissão sem ter stock. O bot rastreia o link partilhado. |
+| **Pequenas lojas físicas** | Lojas de bairro, salões, oficinas | Divulgam promoções e recebem pedidos via WhatsApp. |
+| **Fornecedores / atacadistas** | Quem vende para revendedores | Comunicam novidades e recebem encomendas de forma automatizada. |
+
+---
+
+## 2. Estado Técnico Atual (Abril 2026)
+
+| Funcionalidade | Estado | Detalhe |
+|----------------|--------|---------|
+| **Publicação em grupo de teste** | ✅ Funcional | O bot consegue postar num grupo específico. |
+| **Publicação em múltiplos grupos cadastrados** | ❌ Não funcional | Suspeita de problema na API Green (limitação ou configuração). |
+| **Geração de links rastreados** | ⚠️ Parcial | Funciona em simulação, mas não integrado 100% com o fluxo de postagem. |
+| **Cálculo de comissões** | ⚠️ Parcial | Lógica implementada, não testada com vendas reais. |
+| **API utilizada** | Green API | Gratuita, mas com limitações. Será substituída. |
+| **MVP funcional para demonstração** | ✅ Sim | É possível mostrar o fluxo básico (postagem num grupo, link, comissão simulada). |
+
+---
+
+## 3. Requisitos Funcionais (Completos)
+
+| ID | Descrição | Prioridade |
+|----|-----------|------------|
+| RF01 | Vendedor envia produto (foto + descrição + preço) para o bot | Alta |
+| RF02 | Bot publica a mensagem em **múltiplos grupos pré-cadastrados** | **Crítica** (não funcional) |
+| RF03 | Bot gera um link único rastreado para cada post | Alta |
+| RF04 | Bot regista cliques no link (identificando grupo de origem) | Média |
+| RF05 | Vendedor confirma venda (`VENDI [código] [número]`) | Alta |
+| RF06 | Bot calcula comissões: vendedor, dono do grupo, plataforma | Alta |
+| RF07 | Dono de grupo consulta ganhos via painel ou comando | Média |
+| RF08 | Afiliado pode gerar link próprio e ganhar comissão | Média |
+| RF09 | Sistema de assinatura mensal para vendedores | Alta |
+| RF10 | (Futuro) Integração com Unitel Money | Baixa |
+
+---
+
+## 4. Diferenciais Competitivos (O que torna o KiandaBot único)
+
+### 4.1 Já implementados (ou em simulação)
+- **Automação + rastreamento de comissões** – base do modelo de negócio.
+- **Suporte a afiliados** – qualquer pessoa pode divulgar e ganhar.
+- **Modelo de receita claro** – assinatura + comissão.
+
+### 4.2 Planeados (diferenciais fortes para o pitch)
+| Diferencial | Descrição | Impacto |
+|-------------|-----------|---------|
+| **Sistema de reputação do vendedor** | Comprador avalia o vendedor (1–5 estrelas) após a venda. | Aumenta confiança; diferencia de bots genéricos. |
+| **Relatório de melhor horário para postar** | Bot analisa histórico de cliques e sugere horários ideais. | Aumenta conversão; valor adicional. |
+| **Catálogo inteligente com gestão de stock** | Vendedor mantém produtos no bot; stock atualiza automaticamente. | Elimina retrabalho; evita vender produtos em falta. |
+| **Rastreamento por QR Code (offline)** | Gera QR code para ser escaneado na loja física, rastreando venda offline. | Capta vendas presenciais; inovação. |
+| **Dashboard de dados para a Unitel** | Relatórios anónimos de vendas por região, horários, produtos. | Transforma o bot numa fonte de inteligência de mercado. |
+| **Ranking de afiliados** | Placar público com os que mais venderam; prémios simbólicos. | Gamificação, aumenta engajamento. |
+
+### 4.3 Visão de ecossistema (KiandaPay)
+- Integração com pagamentos (Unitel Money) e logística (código de entrega).  
+- Mostra que o projeto não é uma ferramenta isolada, mas uma **plataforma completa**.
+
+---
+
+## 5. Modelo de Negócio (Atualizado)
+
+| Fonte de receita | Valor | Observação |
+|------------------|-------|------------|
+| **Assinatura mensal (vendedor)** | 3.000 Kz | Inclui até 50 posts/mês |
+| **Comissão por venda** | 5% sobre o valor | Retida automaticamente pelo bot |
+| **Comissão para dono de grupo** | 2,5% | Incentivo para adesão |
+| **Comissão para afiliado** | 2,5% | Pode ser partilhada com o grupo ou ser adicional |
+| **Planos premium** | 5.000 Kz/mês | Posts ilimitados, suporte prioritário |
+| **Planos para lojas** | 10.000 Kz/mês | Catálogo + stock + múltiplos vendedores |
+
+**Projeção de break‑even:** ~50 vendedores pagantes cobrem custos de API e servidor.
+
+---
+
+## 6. Arquitetura Técnica e Desafios
+
+### 6.1 Componentes planeados
+| Componente | Tecnologia | Estado |
+|------------|------------|--------|
+| **Bot WhatsApp** | Python + Evolution API (migração) | Em desenvolvimento |
+| **Servidor** | Python (FastAPI) + SQLite | Esboçado |
+| **Rastreamento** | Encurtador personalizado (ou Bitly) | Em simulação |
+| **Painel web** | React / Vue (futuro) | Não iniciado |
+| **Base de dados** | PostgreSQL (futuro) | Planeado |
+
+### 6.2 Desafios técnicos atuais
+| Desafio | Causa provável | Solução |
+|---------|----------------|---------|
+| Não posta em múltiplos grupos | API Green pode ter limitação de grupos | Migrar para **Evolution API** (mais robusta) |
+| Rastreamento incompleto | Falta integração entre bot e sistema de links | Implementar middleware que gera link após postagem |
+| Risco de bloqueio do WhatsApp | Uso de API não oficial | Migrar para API oficial do WhatsApp Business (após parceria) |
+
+---
+
+## 7. Roadmap (Próximos Passos)
+
+### 7.1 Até 30 de Abril (Candidatura Unitel Go Challenge)
+- [x] **Documentar o projeto** – PRD, pitch, slide, formulário.
+- [ ] **Resolver publicação em múltiplos grupos** (migrar para Evolution API)
+- [ ] **Completar rastreamento** (links manuais ou semi‑automáticos)
+- [ ] **Gravar vídeo de candidatura** (1 minuto, mostrando fluxo básico + simulação dos diferenciais)
+- [ ] **Preparar PowerPoint/PDF** (baseado no template da Unitel)
+- [ ] **Submeter candidatura** (formulário + envio para gochallenge@unitel.co.ao)
+
+### 7.2 Até Maio (Pré‑incubação)
+- [ ] Testar com 5 vendedores reais (amigos, primo)
+- [ ] Implementar **sistema de reputação** (versão simples)
+- [ ] Coletar feedback e ajustar modelo de comissões
+
+### 7.3 Até Outubro (Final do Challenge)
+- [ ] Postagem em centenas de grupos funcional
+- [ ] Rastreamento 100% automático
+- [ ] Painel web básico para vendedores e donos de grupo
+- [ ] Integração com Unitel Money (se possível)
+- [ ] Apresentar pelo menos dois diferenciais (reputação, melhor horário, QR code)
+
+---
+
+## 8. Estratégia para o Unitel Go Challenge
+
+### 8.1 Foco da candidatura (primeira fase)
+- **Provar conceito, não produto final.** Mostrar fluxo funcional (postagem num grupo, link, comissão simulada).
+- **Destacar diferenciais** mesmo que em simulação (mockups).
+- **Mostrar público‑alvo expandido** (vendedores, donos de grupo, afiliados, lojas).
+- **Ligar o projeto à Unitel:** dashboard de dados, potencial integração com Unitel Money.
+
+### 8.2 Mensagem‑chave para o pitch
+> *“O KiandaBot não é só um bot de automação. É um ecossistema que organiza vendas no WhatsApp, recompensa donos de grupos e afiliados, e gera dados valiosos para a Unitel.”*
+
+### 8.3 Riscos e mitigação
+| Risco | Mitigação |
+|-------|-----------|
+| Produto não 100% funcional na candidatura | Mostrar simulações; plano claro de desenvolvimento até Outubro |
+| Concorrência com startups mais maduras | Apostar na inovação (reputação, QR code, dados para Unitel) |
+| API Green limitada | Migrar para Evolution API até final de Abril |
+
+---
+
+## 9. Anexos Práticos (para usar na candidatura)
+
+### 9.1 Pitch de Vídeo (1 minuto) – Roteiro Final
+
+```markdown
+**(0:00 – 0:05) Gancho**  
+_Visual:_ Ecrã de WhatsApp com anúncios a desaparecer.  
+_Áudio:_ “Quantas vendas se perdem no WhatsApp?”
+
+**(0:05 – 0:12) Problema**  
+_Visual:_ Montagem: vendedor frustrado, grupo desorganizado, comissões não rastreadas.  
+_Áudio:_ “Vendedores perdem horas postando nos status – só os seus contactos veem, e não ganham nada. Criam grupos, colocam dezenas de pessoas, tentam vender… e no fim, nada rende. Grupos são um caos. Donos de grupo não ganham nada.”
+
+**(0:12 – 0:25) Solução + demonstração real**  
+_Visual:_ Mostra o KiandaBot a publicar num grupo de teste.  
+_Áudio:_ “Apresento o KiandaBot. Publica automaticamente, gera links rastreados e calcula comissões – tudo no WhatsApp.”
+
+**(0:25 – 0:40) Público‑alvo expandido**  
+_Visual:_ Ícones: vendedor, dono de grupo, afiliado, pequena loja.  
+_Áudio:_ “Não é só para vendedores. Donos de grupo ganham comissão. Afiliados divulgam e lucram – o dono do grupo sabe quem trouxe o cliente. Pequenas lojas automatizam divulgação e atendimento. Tudo no WhatsApp.”
+
+**(0:40 – 0:48) Diferenciais (mockup)**  
+_Visual:_ Simulações: reputação (estrelas), melhor horário, QR code offline.  
+_Áudio:_ “Além disso, reputação do vendedor, análise de melhores horários e rastreamento por QR code – para não perder nenhuma venda, mesmo offline.”
+
+**(0:48 – 0:55) Modelo de negócio + tração + Unitel**  
+_Visual:_ Texto: “3.000 Kz/mês + 5% por venda. Donos de grupos: 2,5%.” + “40 interessados, 28 respostas, 1 na versão beta.” + logótipo Unitel.  
+_Áudio:_ “Assinatura acessível, comissão justa. Já temos 40 vendedores interessados, 28 respostas e um já na versão beta. O KiandaBot pode integrar Unitel Money e gerar dados valiosos para a Unitel.”
+
+**(0:55 – 0:60) Call to action**  
+_Visual:_ Ecrã final: “MVP funcional. Pronto para escalar. gochallenge@unitel.co.ao” + @LioExp.  
+_Áudio:_ “MVP pronto. Queremos levar milhares de vendedores ao próximo nível. KiandaBot.”
+```
+
+### 9.2 Conteúdo para o PowerPoint/PDF (baseado no template da Unitel)
+
+| Secção | Texto resumido |
+|--------|----------------|
+| **Conceito** | KiandaBot – Ecossistema de Vendas no WhatsApp. Automatiza divulgação, rastreia comissões para vendedores, donos de grupo e afiliados. |
+| **Motivação (3 razões)** | 1. Satisfazer necessidade do consumidor (vendedores perdem tempo). 2. Educar para o consumo de dados (uso do WhatsApp Business). 3. Diversificar economia nacional (apoio a pequenos negócios). |
+| **Funcionalidades** | ✅ Publica em grupo de teste; ✅ Gera links rastreados; ✅ Calcula comissões; 🔄 Em desenvolvimento: múltiplos grupos, rastreamento automático, integração Unitel Money. |
+| **Proposta de Valor (3 razões)** | 1. Único ecossistema angolano que integra vendedores, donos de grupo e afiliados. 2. Inovação (QR code offline, reputação, análise de horários). 3. Parceria estratégica com a Unitel (dados de mercado, pagamentos). |
+| **Operacionalização** | 1. Desenho da plataforma (concluído). 2. Desenvolvimento (MVP em curso). 3. Integração (migração para Evolution API). 4. Lançamento (Junho 2026). 5. Manutenção e gestão (com incubadora Unitel). |
+| **Plano Financeiro** | CAPEX: ~150.000 Kz; OPEX mensal: ~50.000 Kz; Previsão de vendas (1º ano): 3.600.000 Kz; Retorno: 6–8 meses. |
+| **Veredicto (3 razões)** | 1. Mercado com provas (sucesso no Brasil/Índia). 2. Partilha de experiências dá potencial viral. 3. Potencia o uso de dados e número de utilizadores de internet. |
+
+### 9.3 Dados para o formulário de inscrição
+
+| Campo | Resposta |
+|-------|----------|
+| **Função na startup** | Fundador / Desenvolvedor |
+| **Fonte de renda actual** | Estudante |
+| **Estado actual no mercado** | apenas projecto |
+| **Sector de actividade** | Tecnologia / Software |
+| **Nº de colaboradores** | 1 |
+| **Formato de trabalho** | Remoto |
+| **Local de trabalho** | Domicílio particular |
+| **Província** | Luanda |
+| **Média de vendas** | 0 |
+| **Downloads / visitas** | 0 |
+| **Contas criadas** | 0 |
+| **Utilizadores activos com receita** | 0 |
+| **Parcerias firmadas** | 0 |
+
+---
+
+## 10. Decisões de Design e Trade‑offs
+
+| Decisão | Motivo |
+|---------|--------|
+| Usar API Green inicialmente | Gratuita, permitiu testar conceito. Agora é hora de migrar. |
+| Priorizar funcionalidade de um grupo | Para ter MVP rápido. Agora, escalar é urgente. |
+| Simular rastreamento e diferenciais | Para não atrasar o pitch; o importante é mostrar a visão. |
+| Não integrar pagamentos ainda | Simplifica o MVP; será feito após validação do modelo. |
+
+---
+
+## 11. Conclusão
+
+O KiandaBot resolve um problema real, tem modelo de negócio claro, público‑alvo amplo e diferenciais inovadores. As falhas técnicas atuais são contornáveis com ação imediata. O Unitel Go Challenge é a oportunidade para acelerar o desenvolvimento, ganhar visibilidade e aceder a mentoria.
+
+**Próximo passo imediato:** migrar para Evolution API, resolver a postagem em múltiplos grupos, gravar o vídeo de candidatura até **25 de Abril** e submeter tudo até **30 de Abril**.
+
+---
