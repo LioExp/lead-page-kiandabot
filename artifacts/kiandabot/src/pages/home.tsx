@@ -39,7 +39,7 @@ export default function Home() {
             <a href="#planos" className="text-muted-foreground hover:text-foreground transition-colors">Planos</a>
           </div>
           <Button asChild className="rounded-full font-bold">
-            <a href="mailto:kiandabot@gmail.com">Entrar na Beta</a>
+            <a href="https://wa.me/244957207924?text=Olá! Gostaria de participar do beta do Kianda-Bot" target="_blank">Entrar na Beta</a>
           </Button>
         </div>
       </nav>
@@ -68,7 +68,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button size="lg" className="rounded-full text-base h-14 px-8 font-bold shadow-[0_0_40px_-10px_hsl(262,90%,55%)] hover:shadow-[0_0_60px_-12px_hsl(262,90%,55%)] transition-all duration-300" asChild>
-                  <a href="mailto:kiandabot@gmail.com">
+                  <a href="https://wa.me/244957207924?text=Olá! Gostaria de participar do beta do Kianda-Bot" target="_blank">
                     Quero entrar na beta <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
@@ -173,7 +173,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm font-bold">Auto-postagem</div>
-                    <div className="text-xs text-muted-foreground">Em 12 grupos</div>
+                    <div className="text-xs text-muted-foreground">Em 21 grupos</div>
                   </div>
                 </div>
               </motion.div>
@@ -371,7 +371,7 @@ export default function Home() {
                   tag: null,
                   features: [
                     "Até 50 posts/mês",
-                    "1 grupo",
+                    "3 grupo",
                     "Links rastreados básicos",
                     "Suporte padrão"
                   ],
@@ -451,7 +451,7 @@ export default function Home() {
                         style={plan.accent ? { borderColor: 'hsl(25,100%,55%)', color: 'hsl(25,100%,40%)' } : {}}
                         asChild
                       >
-                        <a href="mailto:kiandabot@gmail.com">{plan.cta}</a>
+                        <a href="https://wa.me/244957207924?text=Olá! Gostaria de participar do beta do Kianda-Bot" target="_blank">{plan.cta}</a>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -474,7 +474,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="rounded-full text-lg h-14 px-10 font-bold shadow-[0_0_40px_-10px_hsl(262,90%,55%)] hover:shadow-[0_0_60px_-15px_hsl(262,90%,55%)] transition-all duration-300" asChild>
-                <a href="mailto:kiandabot@gmail.com">
+                <a href="https://wa.me/244957207924?text=Olá! Gostaria de participar do beta do Kianda-Bot" target="_blank">
                   Quero entrar na beta <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
